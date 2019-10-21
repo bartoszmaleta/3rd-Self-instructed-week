@@ -40,7 +40,8 @@ print('---------------------------')
 total = a + b + x + y + 30
 print(total)
 
+counter = 0
 counter = counter + 1
 counter += 1
 
-
+print(counter)
