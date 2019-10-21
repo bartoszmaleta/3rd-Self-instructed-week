@@ -5,6 +5,7 @@ count, result, total = 1, 2, 3
 print(count)
 print(result)
 print(total)
+print('---------------------------')
 
 a = 0
 
@@ -12,6 +13,8 @@ if a == 0:
     b = 1
 
 print(b)
+
+print('---------------------------')
 
 
 def my_function(c):
@@ -27,5 +30,17 @@ print(my_function)
 print(a)
 print(b)
 
+print('---------------------------')
+
+x = y = 11 
+print(x, y)
+
+print('---------------------------')
+
+total = a + b + x + y + 30
+print(total)
+
+counter = counter + 1
+counter += 1
 
 
