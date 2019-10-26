@@ -55,6 +55,6 @@ timetable[0][15] = "meeting with Jane"
 print(timetable)
 
 print('\n-------------------------------------------- ')
-timetable = [[""] * 24 for day in range(7)]  # do not work how it should
+timetable = [[""] * 24 for day in range(7)]  
 timetable[0][15] = "meeting with Jane"
 print(timetable)
