@@ -298,4 +298,27 @@ print_table(inv, 'count,asc')
 # print_table(inv, 5)
 # print_table(inv, asd)     DOESN NOT WORK
 
+print('\n-------------------------------------------- ')
+print('\n-------------------------------------------- Step 6.1.2')
+step2_1 = 'Step 6.1.2. \n Deleting loot'
+print(step2_1)
 
+# same as dragon_loot but with 'axe' at the end
+deleting_loot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby', 'axe']
+
+
+def deleting_items_from_inventory_by_deleting_loot(inventory, deleted_items):
+    def if_0_of_loot_deletes_item():
+        if inv[item] <= 0:
+            del inv[item]
+
+    for item in deleting_loot:
+        if item in inv:
+            inv[item] -= 1
+            if_0_of_loot_deletes_item()
+        else:           
+            inv[item] = 1
+
+
+deleting_items_from_inventory_by_deleting_loot(inv, deleting_loot)
+print_table(inv, 'count,asc')
