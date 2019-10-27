@@ -144,8 +144,8 @@ print_table(inv, 'count,asc')
 print('\n-------------------------------------------- Step 4.0.')
 
 
-def import_inventory(inventory, filename='import_inventory.csv'):
-    with open('import_inventory.csv', encoding='utf-8') as imported_inventory:  
+def import_inventory(inventory, filename='/home/acer/Documents/3rd-Self-instructed-week/3rd-Self-instructed-week/import_inventory.csv'):
+    with open('/home/acer/Documents/3rd-Self-instructed-week/3rd-Self-instructed-week/import_inventory.csv', encoding='utf-8') as imported_inventory:  
         csv_file_in_reader_state = csv.reader(imported_inventory)
         for data_from_file in csv_file_in_reader_state:
             list_of_inventory_from_file = data_from_file
@@ -218,7 +218,7 @@ def add_to_inventory(inventory, added_items):
 
 
 add_to_inventory(inv, monster_loot)
-# print_table(inv, 'count,asc')
+print_table(inv, 'count,asc')
 # print_table(inv, 'asd')
 # print_table(inv)
 # print_table(inv, 5)

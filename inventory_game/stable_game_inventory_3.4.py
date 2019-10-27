@@ -142,8 +142,8 @@ print('\n-------------------------------------------- Step 4.0')
 #         print(line)
 
 
-def import_inventory(inventory, filename='import_inventory.csv'):
-    with open('import_inventory.csv') as imported_inventory:  
+def import_inventory(inventory, filename='/home/acer/Documents/3rd-Self-instructed-week/3rd-Self-instructed-week/import_inventory.csv'):
+    with open('/home/acer/Documents/3rd-Self-instructed-week/3rd-Self-instructed-week/import_inventory.csv') as imported_inventory:  
         csv_file_in_reader_state = csv.reader(imported_inventory)
         for data_from_file in csv_file_in_reader_state:
             list_of_inventory_from_file = data_from_file
